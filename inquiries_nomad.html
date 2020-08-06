@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inquiries</title>
+  <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="inquiries">
+
+  <!-- === header section start === -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="left-nav navbar-nav mr-auto mt-2 mt-lg-0 d-none">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <ul class="right-nav navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adam Howell</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+            <li class="nav-item notification-item">
+              <a class="nav-link notification" href="#">
+                <i class="fas fa-bell"><span class="badge">38</span></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <!-- ===//end of header section === -->
+ 
+
+  <!-- === inquiries_content section start === -->
+  <section class="inquiries_content">
+    <div class="container">
+      <h1 class="page-title">Dashboard</h1>
+
+      <div class="top-heading">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row for-bg">
+              <div class="col-md-6 m-md-0 mb-3 pr-md-0 pl-0">
+                <a href="#" class="active">
+                  <img src="images/icon/search.png" alt="search" class="img-fluid">
+                  <span class="text">Inquiries</span>
+                </a>
+              </div> 
+              <div class="position-relative col-md-6 pl-md-0">
+                <a href="#" class="discuss-btn-link d-flex justify-content-between">
+                  <div class="div">
+                    <img src="images/icon/message.png" alt="message" class="img-fluid">
+                    <span class="text">Active Discussions</span>
+                  </div>
+                  <span class="badge badge-danger">6</span>
+                </a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body">
+          <article>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="information">
+                  <div class="d-sm-flex justify-content-between">
+                    <h2 class="section-heading">China Drug Prescription Data</h2>
+                    <div class="data-type">
+                      Data Types: Legal Data
+                    </div>
+                  </div>
+                  <p>
+                    I am looking for data on legal case outcomes from all over the US. I would like to be able to tell the lawyers involved, the judge, the plaintiffs and the defendant. I would need this data in a CSV or API form for us in an automated ingestion proc<span id="dots1">...</span>
+                  </p>
+                  <div id="more1" class="more">
+                    <div class="row">
+                      <div class="col-lg-7 left">
+                        <div class="question">
+                          <h2 class="section-heading">Questions</h2>
+                          <ul>
+                            <li class="d-flex">
+                              <div class="number">01</div>
+                              <h3 class="section-heading main-question">How often does your dataset get released?</h3>
+                            </li>
+                            <li class="d-flex">
+                              <div class="number">02</div>
+                              <h3 class="section-heading main-question">Does it cover quarterly periods only or is it more granular?</h3>
+                            </li>
+                            <li class="d-flex">
+                              <div class="number">03</div>
+                              <h3 class="section-heading main-question">Can you support GraphQL or only REST endpoings?</h3>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 right">
+                        <div class="price-range border-bottom">
+                          <h3 class="section-heading">Price range</h3>
+                          <h4>USD 25-50K</h4>
+                        </div>
+                        <div class="geographic-coverage border-bottom">
+                          <h3 class="section-heading">Geographic Coverage</h3>
+                          <h4>United States, Europe, France, Asia</h4>
+                        </div>
+                        <div class="sector">
+                          <h3 class="section-heading">Sector</h3>
+                          <span class="badge">Economic</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bottom d-flex justify-content-between align-items-center">
+                    <button class="btn more-btn" onclick="readMore1()" id="moreBtn1">Read more</button>
+                    <div class="action">
+                      <button class="btn green-btn" id="green1"> <i class="fas fa-thumbs-up"></i></button>
+                      <button class="btn red-btn" id="red1"><i class="fas fa-thumbs-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 author-col">
+                <div class="author" id="author1">
+                  <h2 class="section-heading">Customer:</h2>
+                  <div class="d-flex align-items-center">
+                    <div class="img">
+                      <img src="images/author/author.png" class="img-fluid" alt="profile-pic">
+                    </div>
+                    <div class="text">
+                      <h4 class="author-name">Writes Company</h4>
+                      <h5 class="author-title">Luy Roben</h5>
+                    </div>
+                  </div>
+                  <div class="author-details">
+                    <div class="div">
+                      <button class="btn collapse-btn1" data-toggle="collapse" data-target="#collapse1"><i class="far fa-chevron-down"></i> <span>About</span></button>
+                      <p class="collapse" id="collapse1">
+                        Nielsen is the largest market research company in the world, and we provide measurement solutions covering 80+ countries. Nielsens primary focus for financial firms is on the Fa...
+                      </p>
+                    </div>
+                    <div class="text-right">
+                      <a class="btn profile-btn1" href="#"><img src="images/icon/hash_icon.png" alt="hash-icon" class="img-fluid"> <span>Full Profile</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="information">
+                  <div class="d-sm-flex justify-content-between">
+                    <h2 class="section-heading">China Drug Prescription Data</h2>
+                    <div class="data-type">
+                      Data Types: Legal Data
+                    </div>
+                  </div>
+                  <p>
+                    I am looking for data on legal case outcomes from all over the US. I would like to be able to tell the lawyers involved, the judge, the plaintiffs and the defendant. I would need this data in a CSV or API form for us in an automated ingestion proc<span id="dots2">...</span>
+                  </p>
+                  <div id="more2" class="more">
+                    <div class="row">
+                      <div class="col-lg-7 left">
+                        <div class="question">
+                          <h2 class="section-heading">Questions</h2>
+                          <ul>
+                            <li class="d-flex">
+                              <div class="number">01</div>
+                              <h3 class="section-heading main-question">How often does your dataset get released?</h3>
+                            </li>
+                            <li class="d-flex">
+                              <div class="number">02</div>
+                              <h3 class="section-heading main-question">Does it cover quarterly periods only or is it more granular?</h3>
+                            </li>
+                            <li class="d-flex">
+                              <div class="number">03</div>
+                              <h3 class="section-heading main-question">Can you support GraphQL or only REST endpoings?</h3>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 right">
+                        <div class="price-range border-bottom">
+                          <h3 class="section-heading">Price range</h3>
+                          <h4>USD 25-50K</h4>
+                        </div>
+                        <div class="geographic-coverage border-bottom">
+                          <h3 class="section-heading">Geographic Coverage</h3>
+                          <h4>United States, Europe, France, Asia</h4>
+                        </div>
+                        <div class="sector">
+                          <h3 class="section-heading">Sector</h3>
+                          <span class="badge">Economic</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bottom d-flex justify-content-between align-items-center">
+                    <button class="btn more-btn" onclick="readMore2()" id="moreBtn2">Read more</button>
+                    <div class="action">
+                      <button class="btn green-btn" id="green2"> <i class="fas fa-thumbs-up"></i></button>
+                      <button class="btn red-btn" id="red2"><i class="fas fa-thumbs-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 author-col">
+                <div class="author" id="author2">
+                  <h2 class="section-heading">Customer:</h2>
+                  <div class="d-flex align-items-center">
+                    <div class="img">
+                      <img src="images/author/author.png" class="img-fluid" alt="profile-pic">
+                    </div>
+                    <div class="text">
+                      <h4 class="author-name">Writes Company</h4>
+                      <h5 class="author-title">Luy Roben</h5>
+                    </div>
+                  </div>
+                  <div class="author-details">
+                      <div class="div">
+                        <button class="btn collapse-btn2" data-toggle="collapse" data-target="#collapse2"><i class="far fa-chevron-down"></i> <span>About</span></button>
+                        <p class="collapse" id="collapse2">
+                          Nielsen is the largest market research company in the world, and we provide measurement solutions covering 80+ countries. Nielsens primary focus for financial firms is on the Fa...
+                        </p>
+                      </div>
+                      <div class="text-right">
+                        <a class="btn profile-btn2" href="#"><img src="images/icon/hash_icon.png" alt="hash-icon" class="img-fluid"> <span>Full Profile</span></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===//end of inquiries_content section === -->
+ 
+  
+  <!-- === footer section start === -->
+  <footer class="footer">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <p class="copyright">©Nomad 2020</p>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <!-- ===//end of footer section === -->
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+</html>

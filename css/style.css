@@ -1,0 +1,449 @@
+/*=== global css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/*===// end of global css === */
+/*=== config css start === */
+@font-face {
+  font-family: Aileron-Light;
+  src: url(../fonts/Aileron-Light.otf);
+}
+
+@font-face {
+  font-family: Aileron-Regular;
+  src: url(../fonts/Aileron-Regular.otf);
+}
+
+@font-face {
+  font-family: Aileron-SemiBold;
+  src: url(../fonts/Aileron-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Aileron-Bold;
+  src: url(../fonts/Aileron-Bold.otf);
+}
+
+body {
+  font-family: 'Aileron-Regular';
+  font-weight: 500;
+  background: #E5E5E5;
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1601px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+/*===// end of config css === */
+/*=== utility css start === */
+/*===// end of utility css === */
+/*=== common css start === */
+.page-title {
+  font-family: Aileron-Bold;
+  color: #29384D;
+  font-size: 25px;
+  margin: 30px 0;
+}
+
+.section-heading {
+  font-family: Aileron-Bold;
+  color: #29384D;
+  font-size: 16px;
+}
+
+.top-heading .for-bg {
+  background: #EDF1F4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: -4px;
+}
+
+.top-heading a {
+  font-family: Aileron-SemiBold;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #5C728A;
+  background: #EDF1F4;
+  padding: 15px;
+  display: block;
+}
+
+.top-heading a img {
+  opacity: 0.5;
+  padding-right: 15px;
+}
+
+.top-heading a.active {
+  color: #2F96E8;
+  background: #fff;
+  clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.top-heading a.active .img {
+  opacity: 1;
+}
+
+.top-heading .discuss-btn-link {
+  padding: 11px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #8191A5;
+}
+
+.badge-danger {
+  background: #FF6060;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  min-width: 25px;
+  min-height: 25px;
+  color: #fff;
+}
+
+.green {
+  color: #2F96E8;
+}
+
+.red {
+  color: red;
+}
+
+/*===// end of common css === */
+/*=== navbar section start === */
+.navbar {
+  box-shadow: 0px 0px 30px rgba(108, 138, 167, 0.14);
+}
+
+.navbar .navbar-brand {
+  background: #29384D;
+  border-bottom-right-radius: 30px;
+  margin-left: -1rem;
+  margin-top: -1rem;
+  margin-bottom: -.5rem;
+  padding: 30px 90px 20px 90px;
+}
+
+@media (max-width: 575px) {
+  .navbar .navbar-brand {
+    padding: 30px 40px 20px 40px;
+  }
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  font-family: 'Aileron-Regular';
+  color: #5C728A;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: 'Aileron-Regular';
+  color: #5C728A;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #2F96E8;
+}
+
+@media (min-width: 991px) {
+  .navbar-light .navbar-nav .notification-item {
+    padding-right: 90px !important;
+    padding-left: 30px !important;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link.notification i {
+  font-size: 22px;
+  color: #2F96E8;
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link.notification .badge {
+  font-weight: 600;
+  font-size: 11px;
+  background: #FF6060;
+  color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  min-width: 15px;
+  min-height: 15px;
+  line-height: 14px;
+}
+
+/*===// end of navbar section === */
+/*=== inquiries section start === */
+#inquiries .card-body {
+  padding: 30px;
+}
+
+#inquiries .card-body article {
+  border: 1px solid #AFC0D1;
+  border-radius: 4px;
+  padding: 20px 0 20px 30px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  #inquiries .card-body article {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+#inquiries .card-body article .section-heading {
+  padding-bottom: 20px;
+}
+
+#inquiries .card-body article .data-type {
+  font-weight: 400;
+  font-size: 11px;
+  color: #AFC0D1;
+}
+
+#inquiries .card-body article .more {
+  margin-top: 30px;
+  display: none;
+}
+
+@media (min-width: 991px) {
+  #inquiries .card-body article .more .question {
+    border-right: 1px solid #DAE2EA;
+    padding-right: 30px;
+  }
+}
+
+#inquiries .card-body article .more .question .number {
+  font-size: 22px;
+  color: #5C728A;
+  position: relative;
+  padding-right: 20px;
+}
+
+#inquiries .card-body article .more .question .number::before {
+  content: '';
+  width: 1px;
+  height: 22px;
+  background: #5C728A;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+#inquiries .card-body article .more .question .main-question {
+  margin-top: 5px;
+}
+
+#inquiries .card-body article .more .right .border-bottom {
+  border-color: #DAE2EA !important;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#inquiries .card-body article .more .right .section-heading {
+  padding-bottom: 10px;
+}
+
+#inquiries .card-body article .more .right h4 {
+  color: #8191A5;
+  font-size: 18px;
+}
+
+#inquiries .card-body article .more .right .badge {
+  color: #8191A5;
+  font-size: 12px;
+  border: 1px solid #8191A5;
+  border-radius: 3px;
+}
+
+#inquiries .card-body article .bottom {
+  padding-top: 10px;
+}
+
+#inquiries .card-body article .bottom .more-btn {
+  font-family: Aileron-SemiBold;
+  color: #2F96E8;
+  font-size: 15px;
+  padding-left: 0;
+}
+
+#inquiries .card-body article .bottom .action .btn {
+  color: #AFC0D1;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#inquiries .card-body article .bottom .action .btn.green {
+  color: #2F96E8;
+}
+
+#inquiries .card-body article .bottom .action .btn.red {
+  color: red;
+}
+
+#inquiries .card-body article .author-col {
+  background: #F1F4FB;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 991px) {
+  #inquiries .card-body article .author-col {
+    margin-top: 10px;
+  }
+}
+
+#inquiries .card-body article .author .section-heading {
+  padding-bottom: 15px;
+}
+
+#inquiries .card-body article .author .img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 10px;
+}
+
+#inquiries .card-body article .author .text {
+  width: 75%;
+  position: relative;
+}
+
+#inquiries .card-body article .author .text::before {
+  content: '';
+  width: 105px;
+  height: 12px;
+  background: #29384D;
+  position: absolute;
+  top: -15px;
+}
+
+#inquiries .card-body article .author .text::after {
+  content: '';
+  width: 105px;
+  height: 12px;
+  background: #A1C9E9;
+  position: absolute;
+  top: 5px;
+}
+
+#inquiries .card-body article .author .text .author-name {
+  font-family: Aileron-SemiBold;
+  color: #29384D;
+  font-size: 16px;
+  display: none;
+}
+
+#inquiries .card-body article .author .text .author-title {
+  font-weight: 400;
+  color: #A1C9E9;
+  font-size: 14px;
+  display: none;
+}
+
+#inquiries .card-body article .author .author-details {
+  margin-top: 35px;
+}
+
+#inquiries .card-body article .author .author-details .text-right {
+  margin-top: -38px;
+}
+
+#inquiries .card-body article .author .author-details .text-right .remove-margin {
+  margin-top: 38px;
+}
+
+#inquiries .card-body article .author .author-details .btn {
+  font-family: Aileron-SemiBold;
+  color: #2F96E8;
+  font-size: 15px;
+  filter: grayscale(10);
+  opacity: 0.6;
+}
+
+#inquiries .card-body article .author.active .text::before {
+  display: none;
+}
+
+#inquiries .card-body article .author.active .text::after {
+  display: none;
+}
+
+#inquiries .card-body article .author.active .text .author-name {
+  display: block;
+}
+
+#inquiries .card-body article .author.active .text .author-title {
+  display: block;
+}
+
+#inquiries .card-body article .author.active .author-details .btn {
+  filter: none;
+  opacity: 1;
+}
+
+/*===// end of inquiries section === */
+/*=== ? section start === */
+/*===// end of ? section === */
+/*=== footer section start === */
+.footer {
+  padding: 60px 0px;
+}
+
+.footer p,
+.footer a {
+  font-size: 11px;
+  font-weight: 400;
+  color: #ABB6C1;
+}
+
+/*===// end of footer section === */

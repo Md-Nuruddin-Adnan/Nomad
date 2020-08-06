@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Aileron-Light;
+  src: url(../fonts/Aileron-Light.otf);
+}
+@font-face {
+  font-family: Aileron-Regular;
+  src: url(../fonts/Aileron-Regular.otf);
+}
+@font-face {
+  font-family: Aileron-SemiBold;
+  src: url(../fonts/Aileron-SemiBold.otf);
+}
+@font-face {
+  font-family: Aileron-Bold;
+  src: url(../fonts/Aileron-Bold.otf);
+}
+
+body {
+  font-family: 'Aileron-Regular';
+  font-weight: 500;
+  background: #E5E5E5;
+}
+
+$color-dark: #29384D;
+$color-blue: #2F96E8;
+$color-light: #8191A5;
+
+@media(min-width: 1200px) and (max-width: 1600px){
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media(min-width: 1601px){
+  .container {
+    max-width: 1250px;
+  }
+}

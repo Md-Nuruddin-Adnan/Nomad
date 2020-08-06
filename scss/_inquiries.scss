@@ -1,0 +1,210 @@
+#inquiries {
+  .card-body {
+    padding: 30px;
+
+    article {
+      border: 1px solid #AFC0D1;
+      border-radius: 4px;
+      padding: 20px 0 20px 30px ;
+      margin-bottom: 15px;
+      overflow: hidden;
+
+      @media(max-width: 991px){
+        padding: 20px 30px 20px 30px ;
+      }
+
+      .section-heading {
+        padding-bottom: 20px;
+      }
+
+      .data-type {
+        font-weight: 400;
+        font-size: 11px;
+        color: #AFC0D1;
+      }
+
+      .more {
+        margin-top: 30px;
+        display: none;
+        .question {
+          @media(min-width: 991px){
+            border-right: 1px solid #DAE2EA;
+            padding-right: 30px;
+          }
+
+          .number {
+            font-size: 22px;
+            color: #5C728A;
+            position: relative;
+            padding-right: 20px;
+
+            &::before {
+              content: '';
+              width: 1px;
+              height: 22px;
+              background: #5C728A;
+              position: absolute;
+              top: 5px;
+              right: 10px;
+            }
+          }
+
+          .main-question {
+            margin-top: 5px;
+          }
+        }
+
+        .right {
+          .border-bottom {
+            border-color: #DAE2EA !important;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+          }
+          .section-heading {
+            padding-bottom: 10px;
+
+          }
+          h4 {
+            color: #8191A5;
+            font-size: 18px;
+          }
+
+          .badge {
+            color: #8191A5;
+            font-size: 12px;
+            border: 1px solid #8191A5;
+            border-radius: 3px;
+          }
+        }
+      }
+      .bottom {
+        padding-top: 10px;
+        .more-btn {
+          font-family: Aileron-SemiBold;
+          color: $color-blue;
+          font-size: 15px;
+          padding-left: 0;
+        }
+
+        .action {
+
+          .btn {
+            color: #AFC0D1;
+            font-size: 20px;
+            padding: 5px;
+          }
+          .btn.green{
+            color: $color-blue;
+          }
+          
+          .btn.red{
+            color: red;
+          }
+        }
+      }
+
+      .author-col {
+        background: #F1F4FB;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media(max-width: 991px){
+          margin-top: 10px;
+        }
+      }
+
+      .author {
+        .section-heading {
+          padding-bottom: 15px;
+        }
+        .img img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: block;
+          margin-right: 10px;
+        }
+        .text {
+          width: 75%;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 105px;
+            height: 12px;
+            background: $color-dark;
+            position: absolute;
+            top: -15px;
+          }
+          &::after {
+            content: '';
+            width: 105px;
+            height: 12px;
+            background: #A1C9E9;
+            position: absolute;
+            top: 5px;
+          }
+
+          .author-name {
+            font-family: Aileron-SemiBold;
+            color: $color-dark;
+            font-size: 16px;
+            display: none;
+          }
+          .author-title {
+            font-weight: 400;
+            color: #A1C9E9;
+            font-size: 14px;
+            display: none;
+          }
+        }
+
+        .author-details {
+          margin-top: 35px;
+          .text-right {
+            margin-top: -38px;
+
+            .remove-margin {
+              margin-top: 38px;
+            }
+          }
+          .btn {
+            font-family: Aileron-SemiBold;
+            color: $color-blue;
+            font-size: 15px;
+            filter: grayscale(10);
+            opacity: 0.6;
+          }
+        }
+      }
+
+      // author active
+      .author.active {
+        .text {
+          &::before {
+            display: none;
+          }
+          &::after {
+            display: none;
+          }
+          .author-name {
+            display: block;
+          }
+          .author-title {
+            display: block;
+          }
+        }
+
+        .author-details {
+          .btn {
+            filter: none;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

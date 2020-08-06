@@ -1,0 +1,79 @@
+// page title 
+.page-title {
+  font-family: Aileron-Bold;
+  color: $color-dark;
+  font-size: 25px;
+  margin: 30px 0;
+}
+// section heading 
+.section-heading {
+  font-family: Aileron-Bold;
+  color: $color-dark;
+  font-size: 16px;
+}
+
+.top-heading {
+  .for-bg {
+    background: #EDF1F4;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -4px;
+  }
+  a {
+    font-family: Aileron-SemiBold;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #5C728A;
+    background: #EDF1F4;
+    padding: 15px;
+    display: block;
+
+    img {
+      opacity: 0.5;
+      padding-right: 15px;
+    }
+
+    &.active {
+      color: $color-blue;
+      background: #fff;
+      clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+
+      .img {
+        opacity: 1;
+      }
+    }
+
+   
+  }
+  .discuss-btn-link {
+    padding: 11px;
+  }
+}
+
+p {
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-light;
+}
+
+.badge-danger {
+  background: #FF6060;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  min-width: 25px;
+  min-height: 25px;
+  color: #fff;
+}
+
+.green{
+  color: $color-blue;
+}
+
+.red{
+  color: red;
+}
